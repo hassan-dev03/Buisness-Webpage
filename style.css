@@ -1,0 +1,216 @@
+/* ******* NAVBAR ****** */
+
+.nav-item a{
+    font-size:0.9rem;
+}
+.navbar-brand{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.form-border{
+    border: none;
+    padding: 0;
+}
+.form-border::placeholder{
+    font-size: 0.75rem;
+    padding-left: 0.5rem;
+    color: #46434383;
+}
+.search{
+    padding: 0;margin: 0;border: none;
+    height:36px;
+    border-radius:4px;
+}
+.btn1{
+    border: none;
+    background-color: white;
+    color: green;
+    border-radius: 4px;
+}
+.btn101{
+    padding: 12px;
+    border-radius: 6px;
+    background-color: rgba(127, 255, 212, 0.089);
+}
+.btn101 button{
+    /* padding:; */
+    border: none;
+    background: none;
+    /* background-color: rgba(127, 255, 212, 0.089); */
+}
+.btn102{
+    
+    border-radius: 6px;
+    background-color: rgba(127, 255, 212, 0.089);
+}
+.btn102 button{
+    /* padding: 10px 0px 10px 0px; */
+    border: none;
+    background: none;
+    /* background-color: rgba(127, 255, 212, 0.089); */
+}
+
+/* ****** HERO-SECTION ****** */
+
+.hero-section{
+    background-image: url(Home.png);
+    background-size:cover;
+    background-position:center ;
+    min-height: 100vh;
+}
+.text{
+    width: 40%;
+}
+.text h1{
+    font-size: 3rem;
+    line-height: 1.25;
+}
+.text p{font-size: 1.75rem;
+line-height: 1.5}
+
+/* ***** ARTICLE-SECTION ***** */
+
+.article {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.article h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.article p {
+    width: 40%;
+    font-size: 1rem;
+}
+
+/* ****** CONTACT-SECTION ****** */
+
+.contact-section {
+    padding: 3%;
+    width: 100%;
+    /* height: 90vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    width: 80%;
+
+}
+input[type=submit] {
+    background-color: rgb(160, 10, 10);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+
+}
+.pic {
+    height: 100%;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ******* FOOTER-SECTION ********* */
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #e4e5e7;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.link-items{
+    display: flex;
+    text-align: center;
+    gap: 80px;
+        
+}
+.footer ul{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.link-head a{
+    color: rgb(44, 42, 42);
+}
+.link-data a{
+    color: rgb(73, 71, 71);
+} 
+
+.list-5{
+    border-top: 1px solid rgb(182, 173, 173);
+    display: flex;
+    flex-direction:row;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+@media (max-width:1024px) {
+        .nav-item a{ font-size:0.65rem;}
+        .navbar-brand{font-size: 0.8rem;}
+button{
+    font-size: 0.75rem;
+    padding: 8px;
+}
+}
+@media (min-width:992px) {
+    .btn101{display: none;}
+    .form101{display: none;}
+    
+}
+@media (max-width:991px) {
+    .btn102{display: none;}
+    .form102{display: none;}
+}
+
+@media (max-width:768px) {
+    .hero-section{min-height: 70vh;}
+    .text{width: 50%;}
+    .text h1{font-size:2rem ;line-height: 1;}
+    .text p{font-size:1.25rem ;line-height: 1;}
+    .article{height: 80vh;}
+    .article h1{font-size: 2.25rem;margin-bottom: 12px;}
+    .article p{width: 60%;}
+   
+}
+@media (max-width:425px) {
+    .hero-section{min-height: 40vh;}
+    .text{width: 80%;}
+    .text h1{font-size:1.25rem ;line-height: 1;}
+    .text p{font-size:1rem ;line-height: 1;}
+    .article{height: 60vh;}
+    .article h1{font-size: 1.8rem;margin-bottom: 10px;}
+    .article p{width: 70%;}
+    .form {grid-column: 1/span2; align-content: center; align-items: center;}
+    .form-control{width: 100%;}
+    .pic {grid-column: 1/span2;}
+    .footer a{font-size: 0.75rem;}
+    .link-items{gap: 20px;}
+    .list-5{gap:20px;}
+
+}
